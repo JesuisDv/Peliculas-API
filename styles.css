@@ -14,6 +14,20 @@ body{
     background-color: #223143;
 }
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .cont1{
     display: flex;
     justify-content: center;
@@ -75,12 +89,14 @@ body{
     display: flex;
     height: 60vh;
     justify-content: center;
+    
 }
 
 .contPelis{
     margin: 30px inherit;
     height: 90%;
     width: 70%;
+    padding: 20px;
 }
 
 .pelicula{
@@ -102,14 +118,13 @@ body{
     flex-direction: column;
     gap: 30px;
     width: 80%;
-    margin-top: 30px;
     font-size: 1.2rem;
 }
 
 .sinopsisPeli{
     width: 170%;
-    margin-top: 30px;
     font-size: 1.2rem;
+    margin-bottom: 50px;
 }
 
 .infoPeli .namePeli{
@@ -118,6 +133,48 @@ body{
 }
 
 
+
+
+@media (max-width: 768px) {
+
+    .contBuscar form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+    }
+
+    #inputBuscar{
+        width: 250px;
+        text-align: center;
+        border-radius: 30px;
+        border: none;
+    }
+
+    #btnBuscar{
+        width: 80px;
+        height: 40px;
+        border-radius: 30px;
+        color: white;
+    }
+
+
+    .pelicula{
+        flex-direction: column;
+
+    }
+        
+    .sinopsisPeli{
+        width: 100%;
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }   
+
+    .infoPeli .namePeli{
+        text-align: center;
+    }
+
+}
 
 
 
