@@ -10,17 +10,26 @@
     <section class="cont1">
         <div class="contBuscar">
             <h1>Busca Pelis</h1>
-            <input id="inputBuscar" type="text" placeholder="Busca Aqui 🔎" >
-            <button onclick="buscarPelicula()" id="btnBuscar">Buscar</button>
+            <form action="" name="formPeli" onsubmit="buscarPelicula(event)">
+                <input id="inputBuscar" type="text" placeholder="Busca Aqui 🔎" >
+                <button id="btnBuscar" type="submit">Buscar</button>
+            </form>
         </div>
     </section>
     <main>
         <div class="cont2">
             <div class="contPelis">
                 <div class="pelicula">
-                    <img src="" alt="">
-                    <p class="namePeli"></p>
-                    <p class="año"></p>
+                    <div>
+                        <img src="${data.image.medium}" alt="" class="imgPeli">
+                    </div>
+                    <div class="infoPeli">
+                        <p class="namePeli"></p>
+                        <p class="año"></p>
+                        <p class="genero"></p>
+                        <p class="idioma"></p>
+                        <p class="resumen"></p>
+                    </div>
                 </div>
             </div>
         </div>
