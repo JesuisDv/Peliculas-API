@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    color: #ffffff;
+    background-color: #223143;
+}
+
+.cont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.contBuscar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 70%;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #223143;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.431);
+}
+
+.contBuscar form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 50%;
+}
+
+#inputBuscar{
+    padding: 10px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    border-bottom-left-radius: 20px ;
+    border-top-left-radius: 20px;
+    border: none;
+}
+
+#btnBuscar{
+    background-color: #3a77c2;
+    width: 80px;
+    height: 40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    color: white;
+}
+
+#btnBuscar:hover{
+    background-color: #1d5394;
+}
+
+#btnBuscar:active{
+    transform:translateX(-5px);
+    transition: .1s;
+}
+
+.cont2{
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+}
+
+.contPelis{
+    margin: 30px inherit;
+    height: 90%;
+    width: 70%;
+}
+
+.pelicula{
+    display: flex;
+    gap: 40px;
+    margin: 30px;
+}
+
+/* Pelicula Poster */
+
+.imgPeli{
+    width: 310px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.431);
+}
+
+.infoPeli{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.sinopsisPeli{
+    width: 170%;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.infoPeli .namePeli{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
